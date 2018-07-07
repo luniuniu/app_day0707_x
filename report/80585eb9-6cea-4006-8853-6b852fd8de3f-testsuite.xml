@@ -1,0 +1,40 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1530924706091" stop="1530924706150">
+  <name>test_001</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1530924706091" status="failed" stop="1530924706150">
+      <name>Test_001.test_001_1</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test_001.Test_001 object at 0x103bf4160&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    @allure.step(title='第一个测试')
+    def test_001_1(self):
+        allure.attach("这是一个描述","我是具体内容")
+&gt;       assert 0
+E       assert 0
+
+Scripts/test_001.py:8: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="614-MainThread"/>
+        <label name="host" value="yangdeMBP"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1530924706095" status="failed" stop="1530924706097">
+          <name>第一个测试</name>
+          <title>第一个测试</title>
+          <attachments>
+            <attachment source="2366cd96-e31a-4c4a-b6b4-426c5ff8c0f7-attachment.txt" title="这是一个描述" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
